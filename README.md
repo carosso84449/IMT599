@@ -19,7 +19,7 @@
     <a href="#about">About</a>
   </div>
   <body>
-    <h1>Welcome to _ballot tracking</h1>
+    <h1>Welcome to Ballot tracking</h1>
     <sup>Enter your verification code here:</sup>
     </div>
     <!-- Verification code input box -->
