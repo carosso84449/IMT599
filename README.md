@@ -1,16 +1,6 @@
-# IMT599
+# IMT 599: ElectionGuard Election Template Site
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ballot_Tracking</title>
-    <style>
-      #bottom {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 1px;
-      }
-    </style>
   </head>
   <div class="topnav">
     <a class="active" href="#home">Home</a>
