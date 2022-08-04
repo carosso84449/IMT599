@@ -7,6 +7,7 @@
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
+    <a href="#electionrecord">Election Record</a>
   </div>
   <body>
     <h1>Welcome to Ballot tracking</h1>
