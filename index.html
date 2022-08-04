@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <title>Election Results</title>
+  </head>
+  <body>
+    <div class="header-bar">
+      <div class="logo-nav">
+        <!-- <img> -->
+        <h1>Election Ballot Tracking</h1>
+      </div>
+
+      <nav class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./tracking.html">Ballot Tracking</a>
+        <a href="./works.html"> How It Works</a>
+        <a href="./faq.html"> FAQ</a>
+      </nav>
+    </div>
+
+
+    <p>This site is used to track ballot results of elections. Search for your tracking ID using the search box below.
+      No private information, including the contents of your ballot or selections, will be available.</p>
+
+
+    <div class="id-tracker">
+      <h3>Start typing your tracker ID here:</h3>
+      <div class="control"><div id="autosuggest"></div>
+      <input type="text" autocomplete="off" role="combobox" aria-autocomplete="list" aria-owns="autosuggest__results" 
+        aria-activedescendant="" aria-haspopup="false" aria-expanded="false" id="autosuggest__input" placeholder="Enter Tracking ID" class="input">
+
+      <h3>Or scan the QR code from your tracker page!</h3>
+      <button class="button is-large is-success">
+        Scan QR Code
+      </button>
+    </div>
+
+  </body>
+
+</html>
