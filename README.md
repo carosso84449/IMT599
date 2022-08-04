@@ -1,7 +1,7 @@
 # IMT 599: ElectionGuard Election Template Site
   <div class="topnav">
     <a class="active" href="#home">Home</a>
-    <a href="./FAQ.html">Frequently Asked Question (FAQ)</a>
+    <a href="#FAQ">Frequently Asked Question (FAQ)</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
     <a href="#electionrecord">Election Record</a>
