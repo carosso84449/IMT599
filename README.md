@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ballot_Tracking.</title>
+    <title>Ballot_Tracking</title>
     <style>
       #bottom {
         position: absolute;
