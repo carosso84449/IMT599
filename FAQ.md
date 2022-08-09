@@ -1,8 +1,7 @@
 <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#FAQ">Frequently Asked Question (FAQ)</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a class="active" href="https://carosso84449.github.io/IMT599/">Home |</a>
+    <a href="#FAQ">Frequently Asked Question (FAQ) |</a>
+    <a href="#about">About |</a>
     <a href="#electionrecord">Election Record</a>
   </div>
 
@@ -23,19 +22,11 @@ This page contains some of the most common questions regarding the ElectionGuard
 
 <b>No.</b> Verification codes are anonymous and encrypted. Names are never displayed on confirmation codes.
 
-## How long does it take to verify a/my ballot?
-
-For machine-read ballots where bubbles are filled in- <b>up to 7 days after they are cast</b>
-
-For hand-written ballots- <b>up to 2 weeks after they are cast</b>
-
 ## What does my verification status mean?
 
-<b>Received</b> - This status means that your ballot was received but not yet verified
+<b>Cast</b> - This status means that your ballot was received and is part of the election record.
 
-<b>Verified</b> - This status indicates your vote was received, correctly counted, and verified
-
-<b>Spoiled</b> - This status indicates that this ballot was not officially cast, and the contents of the ballot are available to be seen
+<b>Spoiled</b> - This status indicates that this ballot was not officially cast, was spoiled, and the contents of the ballot are available to be seen
 
 ## Can someone find out who I am from a spoiled ballot?
 
