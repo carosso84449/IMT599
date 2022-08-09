@@ -1,8 +1,7 @@
 <div class="topnav">
-    <a class="active" href="https://carosso84449.github.io/IMT599/">Home</a>
-    <a href="#FAQ">Frequently Asked Question (FAQ)</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a class="active" href="https://carosso84449.github.io/IMT599/">Home |</a>
+    <a href="#FAQ">Frequently Asked Question (FAQ) |</a>
+    <a href="#about">About |</a>
     <a href="#electionrecord">Election Record</a>
   </div>
 
