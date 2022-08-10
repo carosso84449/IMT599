@@ -1,10 +1,24 @@
 # IMT 599: ElectionGuard Election Template Site
-  <div class="topnav">
-    <a class="active" href="./index.html">Home |</a>
-    <a href="./FAQ.html">Frequently Asked Questions (FAQ) |</a>
-    <a href="https://www.electionguard.vote/">About |</a>
-    <a href="./tracking.html">Election Record</a>
-    
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <title>Election Results</title>
+  </head>
+  <body>
+    <div class="header-bar">
+      <div class="logo-nav">
+        <!-- <img> -->
+        <h1>Election Ballot Tracking</h1>
+      </div>
+
+      <nav class="menu">
+        <a href="./index.html">Home |</a>
+        <a href="./tracking.html">Ballot Tracking |</a>
+        <a href="./works.html">How It Works |</a>
+        <a href="./FAQ.html">FAQ |</a>
+        <a href="https://www.electionguard.vote/">About |</a>
+      </nav>  
   </div>
   <body>
     <h1>Welcome to Ballot tracking</h1>
