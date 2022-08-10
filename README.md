@@ -3,7 +3,7 @@
     <a class="active" href="./index.html">Home |</a>
     <a href="./FAQ.html">Frequently Asked Questions (FAQ) |</a>
     <a href="https://www.electionguard.vote/">About |</a>
-    <a href="./Record.html">Election Record</a>
+    <a href="./tracking.html">Election Record</a>
     
   </div>
   <body>
