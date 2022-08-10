@@ -1,9 +1,5 @@
 # IMT 599: ElectionGuard Election Template Site
-  <head>
-    <link href="style.css" rel="stylesheet">
-    <title>Election Results</title>
-  </head>
-       <nav class="menu">
+  <nav class="menu">
         <a href="./index.html">Home |</a>
         <a href="./tracking.html">Ballot Tracking |</a>
         <a href="./works.html">How It Works |</a>
