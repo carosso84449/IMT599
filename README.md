@@ -4,7 +4,7 @@
         <a href="./tracking.html">Ballot Tracking |</a>
         <a href="./works.html">How It Works |</a>
         <a href="./FAQ.html">FAQ |</a>
-        <a href="https://www.electionguard.vote/">About |</a>
+        <a href="https://www.electionguard.vote/">About</a>
       </nav>  
   </div>
   <body>
