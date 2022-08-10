@@ -1,6 +1,4 @@
 # IMT 599: ElectionGuard Election Template Site
-<!DOCTYPE html>
-<html>
   <head>
     <link href="style.css" rel="stylesheet">
     <title>Election Results</title>
