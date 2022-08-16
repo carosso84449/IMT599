@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <title>Election Results</title>
+    <style>
+        /* CSS styles */
+
+        /* Navbar container */
+        .navbar {
+            background-color: #20b2aa;
+            font-family: Arial;
+            overflow: hidden;
+        }
+
+        /* Links inside the navbar */
+        .navbar a {
+            color: white;
+            float: left;
+            font-size: 16px;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        /* Add a background color to navbar links on hover */
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: orange;
+        }
+
+
+
+        /* h1 Election Ballot Tracking */
+        h1 {
+            font-family: Arial;
+            padding-top: 65;
+            text-align: center;
+        }
+
+        /* paragraph l/r magins */
+        p {
+            font-family: Arial;
+            padding-top: 20;
+            margin-left: 20;
+            margin-right: 20;
+        }
+
+
+        /* input promps alignment */
+        h3 {
+            font-family: Arial;
+            padding-top: 20;
+            text-align: center;
+        }
+
+
+
+
+        footer {
+            background-color: #20b2aa;
+            color: #fff;
+            display: grid;
+            justify-content: center;
+            padding-bottom: 4;
+            padding-top: 7;
+
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <div class="logo-nav">
+            <!-- <img> -->
+        </div>
+
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./tracking.html">Ballot Tracking</a>
+            <a href="./works.html">How It Works</a>
+            <a href="./FAQ.html">FAQ</a>
+            <a href="https://www.electionguard.vote/">About</a>
+        </nav>
+    </div>
+
+    <div>
+        <h1>Election Ballot Tracking</h1>
+    </div>
+    <div>
+        <p>This site is used to track ballot results of elections. Search for your tracking ID using the search box below.
+            No private information, including the contents of your ballot or selections, will be available.</p>
+    </div>
+    <div class="id-tracker">
+        <h3>Start typing your tracker ID here:</h3>
+        <center>
+            <div class="control">
+                <div id="autosuggest"></div>
+                <form action="/action_page.php">
+                    <center><input type="search" name="q" placeholder="Search query"></center>
+                </form>
+                <center><input type="submit" value="Submit"></center>
+            </div>
+
+
+            <div>
+                <script src="https://code.jquery.com/jquery-3.5.1.js">
+                </script>
+            </div>
+</body>
+</html>
