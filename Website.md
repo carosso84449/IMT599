@@ -1,1 +1,0 @@
-## ElectionGuard Dashboard Overview
