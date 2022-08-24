@@ -1,0 +1,17 @@
+<!-- Spoiled ballot table template -->
+<table>
+    <tr>
+        <th>Verification Code</th>
+        <th>Contest Name</th>
+        <th>Selection Name</th>
+        <th>Tally</th>
+    </tr>
+    {% for s in spoiled_list %}
+    <tr>
+        <td>{{ s.ballot_id }}</td>
+        <td>{{ s.contest_id }}</td>
+        <td>{{ s.selection_id }}</td>
+        <td>{{ s.tally }}</td>
+    </tr>
+    {% endfor %}
+</table>

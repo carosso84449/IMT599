@@ -1,0 +1,33 @@
+<!-- Submitted ballot search results table template -->
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h1>Search Results</h1>
+
+{% if not spoiled_list %}
+<p>No matching ballot found.</p>
+{% else %}
+<table class="content-table">
+    <thead>
+        <tr>
+            <th>Verification Code</th>
+            <th>Status </th>
+            <th>Timestamp </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for submitted in submitted_list %}
+        <tr class="active-row">
+            <td>{{ submitted.ballot_id }}</td>
+            <td>{{ submitted.status }}</td>
+            <td>{{ submitted.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+{% endif %}
+
+{% endblock %}

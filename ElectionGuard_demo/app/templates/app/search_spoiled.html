@@ -1,0 +1,19 @@
+<!-- Spoiled ballot search page template -->
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Spoiled Ballot Tracking</h1>
+    <p class="lead">
+        Search through spoiled ballots to verify that votes are correctly counted.
+        Spoiled ballots are used to challenge and verify vote selections, and are <b>not</b> counted towards election results.
+        Search for the tracking ID of a spoiled ballot using the search box below.
+    </p>
+    <form action="{% url 'legacy:search_results_spoiled' %}" method="get">
+        <center><input name="q" type="text" placeholder="Enter tracking ID"></center>
+        <center><input class="btn btn-primary btn-large" type="submit" value="Submit" &raquo;></center>
+    </form>
+</div>
+
+{% endblock %}

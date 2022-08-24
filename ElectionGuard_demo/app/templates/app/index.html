@@ -1,0 +1,38 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<!-- Home page template -->
+<div class="jumbotron">
+    <h1>ElectionGuard Ballot Tracking</h1>
+    <p class="lead">
+        This site is used to track ballot results of elections. Search for your tracking ID using the search box below.
+        No private information, including the contents of your ballot or selections, will be available.
+    </p>
+    <form action="{% url 'legacy:search_results' %}" method="get">
+        <center><input name="q" type="text" placeholder="Enter tracking ID"></center>
+        <center><input class="btn btn-primary btn-large" type="submit" value="Submit" &raquo;></center>
+    </form>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Input your unique verification code into the searchbar above, or visit the full election record to find confirmation of your ballot.
+        </p>
+        <p><a class="btn btn-default" href="http://electionguard.azurewebsites.net/legacy/search_results/?q=">View full record &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>FAQ</h2>
+        <p>Get answers to the most common questions regarding the ElectionGuard software and how elections work when ElectionGuard is implemented.</p>
+        <p><a class="btn btn-default" href="{% url 'faq' %}">Visit FAQ &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Microsoft ElectionGuard</h2>
+        <p>ElectionGuard is an open source software development kit (SDK) that makes voting more secure, transparent and accessible with end-to-end verifiability.</p>
+        <p><a class="btn btn-default" href="https://www.electionguard.vote/">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}

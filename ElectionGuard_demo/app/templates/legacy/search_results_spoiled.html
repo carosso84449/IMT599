@@ -1,0 +1,33 @@
+<!-- Spoiled ballot search results table template -->
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h1>Search Results</h1>
+
+{% if not spoiled_list %}
+<p>No matching ballot found.</p>
+{% else %}
+<table class="content-table">
+    <thead>
+        <tr>
+            <th>Verification Code</th>
+            <th>Contest Name </th>
+            <th>Selection Name </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for spoiled in spoiled_list %}
+        <tr class="active-row">
+            <td>{{ spoiled.ballot_id }}</td>
+            <td>{{ spoiled.contest_id }}</td>
+            <td>{{ spoiled.selection_id }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+{% endif %}
+
+{% endblock %}

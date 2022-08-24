@@ -1,0 +1,10 @@
+<!-- Search results template -->
+<h1>Search Results</h1>
+
+<ul>
+    {% for spoiled in spoiled_list %}
+    <li>
+        {{ spoiled.ballot_id }}, {{ spoiled.contest_id }}, {{ spoiled.selection_id }}, {{ spoiled.tally }}
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+<!-- Submitted ballot table template -->
+<table>
+    <tr>
+        <th>Verification Code</th>
+        <th>Status</th>
+        <th>Timestamp</th>
+    </tr>
+    {% for s in submitted_list %}
+    <tr>
+        <td>{{ s.ballot_id }}</td>
+        <td>{{ s.status }}</td>
+        <td>{{ s.timestamp }}</td>
+    </tr>
+    {% endfor %}
+</table>
