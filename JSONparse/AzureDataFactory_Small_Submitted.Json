@@ -1,0 +1,414 @@
+{
+    "name": "small_submitted_sql",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureSqlDatabase1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "ballet_id",
+                "type": "nvarchar"
+            },
+            {
+                "name": "timestamp",
+                "type": "nvarchar"
+            },
+            {
+                "name": "status",
+                "type": "nvarchar"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "small_submitted"
+        }
+    }
+}
+
+{
+    "name": "Submitted_json",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureFileStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureFileStorageLocation",
+                "folderPath": "smallsample/small/election_record/submitted_ballots"
+            }
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "object_id": {
+                    "type": "string"
+                },
+                "style_id": {
+                    "type": "string"
+                },
+                "manifest_hash": {
+                    "type": "object",
+                    "properties": {
+                        "data": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "code_seed": {
+                    "type": "object",
+                    "properties": {
+                        "data": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "contests": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "object_id": {
+                                "type": "string"
+                            },
+                            "sequence_order": {
+                                "type": "integer"
+                            },
+                            "description_hash": {
+                                "type": "object",
+                                "properties": {
+                                    "data": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "ballot_selections": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "object_id": {
+                                            "type": "string"
+                                        },
+                                        "sequence_order": {
+                                            "type": "integer"
+                                        },
+                                        "description_hash": {
+                                            "type": "object",
+                                            "properties": {
+                                                "data": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "ciphertext": {
+                                            "type": "object",
+                                            "properties": {
+                                                "pad": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "data": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "crypto_hash": {
+                                            "type": "object",
+                                            "properties": {
+                                                "data": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "is_placeholder_selection": {
+                                            "type": "boolean"
+                                        },
+                                        "nonce": {
+                                            "type": "null"
+                                        },
+                                        "proof": {
+                                            "type": "object",
+                                            "properties": {
+                                                "proof_zero_pad": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "proof_zero_data": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "proof_one_pad": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "proof_one_data": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "proof_zero_challenge": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "proof_one_challenge": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "challenge": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "proof_zero_response": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "proof_one_response": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "usage": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "extended_data": {
+                                            "type": "null"
+                                        }
+                                    }
+                                }
+                            },
+                            "ciphertext_accumulation": {
+                                "type": "object",
+                                "properties": {
+                                    "pad": {
+                                        "type": "object",
+                                        "properties": {
+                                            "data": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "data": {
+                                        "type": "object",
+                                        "properties": {
+                                            "data": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "crypto_hash": {
+                                "type": "object",
+                                "properties": {
+                                    "data": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "nonce": {
+                                "type": "null"
+                            },
+                            "proof": {
+                                "type": "object",
+                                "properties": {
+                                    "pad": {
+                                        "type": "object",
+                                        "properties": {
+                                            "data": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "data": {
+                                        "type": "object",
+                                        "properties": {
+                                            "data": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "challenge": {
+                                        "type": "object",
+                                        "properties": {
+                                            "data": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "response": {
+                                        "type": "object",
+                                        "properties": {
+                                            "data": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "constant": {
+                                        "type": "integer"
+                                    },
+                                    "usage": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "code": {
+                    "type": "object",
+                    "properties": {
+                        "data": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "timestamp": {
+                    "type": "integer"
+                },
+                "crypto_hash": {
+                    "type": "object",
+                    "properties": {
+                        "data": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "nonce": {
+                    "type": "null"
+                },
+                "state": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
+
+{
+    "name": "import_small_submitted",
+    "properties": {
+        "activities": [
+            {
+                "name": "small_submitted_import",
+                "type": "Copy",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "JsonSource",
+                        "storeSettings": {
+                            "type": "AzureFileStorageReadSettings",
+                            "recursive": true,
+                            "wildcardFileName": "*.json",
+                            "enablePartitionDiscovery": false
+                        },
+                        "formatSettings": {
+                            "type": "JsonReadSettings"
+                        }
+                    },
+                    "sink": {
+                        "type": "AzureSqlSink",
+                        "writeBehavior": "insert",
+                        "sqlWriterUseTableLock": false
+                    },
+                    "enableStaging": false,
+                    "translator": {
+                        "type": "TabularTranslator",
+                        "mappings": [
+                            {
+                                "source": {
+                                    "path": "$['object_id']"
+                                },
+                                "sink": {
+                                    "name": "ballot_id",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "path": "$['timestamp']"
+                                },
+                                "sink": {
+                                    "name": "timestamp",
+                                    "type": "String"
+                                }
+                            }
+                        ],
+                        "collectionReference": ""
+                    }
+                },
+                "inputs": [
+                    {
+                        "referenceName": "Submitted_json",
+                        "type": "DatasetReference"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "referenceName": "small_submitted_sql",
+                        "type": "DatasetReference"
+                    }
+                ]
+            }
+        ],
+        "annotations": []
+    }
+}

@@ -1,0 +1,904 @@
+{
+    "name": "small_spoiled_json",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureFileStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureFileStorageLocation",
+                "folderPath": "smallsample/small/election_record/spoiled_ballots"
+            }
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "object_id": {
+                    "type": "string"
+                },
+                "contests": {
+                    "type": "object",
+                    "properties": {
+                        "congressional-race-01": {
+                            "type": "object",
+                            "properties": {
+                                "object_id": {
+                                    "type": "string"
+                                },
+                                "selections": {
+                                    "type": "object",
+                                    "properties": {
+                                        "john-hancock-selection": {
+                                            "type": "object",
+                                            "properties": {
+                                                "object_id": {
+                                                    "type": "string"
+                                                },
+                                                "tally": {
+                                                    "type": "integer"
+                                                },
+                                                "value": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "message": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "pad": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "data": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "shares": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "object_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "guardian_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "share": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "data": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "proof": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "pad": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "data": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "challenge": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "usage": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "recovered_parts": {
+                                                                "type": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "benjamin-franklin-selection": {
+                                            "type": "object",
+                                            "properties": {
+                                                "object_id": {
+                                                    "type": "string"
+                                                },
+                                                "tally": {
+                                                    "type": "integer"
+                                                },
+                                                "value": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "message": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "pad": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "data": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "shares": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "object_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "guardian_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "share": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "data": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "proof": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "pad": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "data": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "challenge": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "usage": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "recovered_parts": {
+                                                                "type": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "write-in-selection": {
+                                            "type": "object",
+                                            "properties": {
+                                                "object_id": {
+                                                    "type": "string"
+                                                },
+                                                "tally": {
+                                                    "type": "integer"
+                                                },
+                                                "value": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "message": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "pad": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "data": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "shares": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "object_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "guardian_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "share": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "data": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "proof": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "pad": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "data": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "challenge": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "usage": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "recovered_parts": {
+                                                                "type": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "congressional-race-01-3-placeholder": {
+                                            "type": "object",
+                                            "properties": {
+                                                "object_id": {
+                                                    "type": "string"
+                                                },
+                                                "tally": {
+                                                    "type": "integer"
+                                                },
+                                                "value": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "message": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "pad": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "data": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "shares": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "object_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "guardian_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "share": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "data": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "proof": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "pad": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "data": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "challenge": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "usage": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "recovered_parts": {
+                                                                "type": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "referendum-pineapple": {
+                            "type": "object",
+                            "properties": {
+                                "object_id": {
+                                    "type": "string"
+                                },
+                                "selections": {
+                                    "type": "object",
+                                    "properties": {
+                                        "referendum-pineapple-affirmative-selection": {
+                                            "type": "object",
+                                            "properties": {
+                                                "object_id": {
+                                                    "type": "string"
+                                                },
+                                                "tally": {
+                                                    "type": "integer"
+                                                },
+                                                "value": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "message": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "pad": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "data": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "shares": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "object_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "guardian_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "share": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "data": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "proof": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "pad": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "data": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "challenge": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "usage": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "recovered_parts": {
+                                                                "type": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "referendum-pineapple-negative-selection": {
+                                            "type": "object",
+                                            "properties": {
+                                                "object_id": {
+                                                    "type": "string"
+                                                },
+                                                "tally": {
+                                                    "type": "integer"
+                                                },
+                                                "value": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "message": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "pad": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "data": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "shares": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "object_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "guardian_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "share": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "data": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "proof": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "pad": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "data": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "challenge": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "usage": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "recovered_parts": {
+                                                                "type": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "referendum-pineapple-2-placeholder": {
+                                            "type": "object",
+                                            "properties": {
+                                                "object_id": {
+                                                    "type": "string"
+                                                },
+                                                "tally": {
+                                                    "type": "integer"
+                                                },
+                                                "value": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "data": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                },
+                                                "message": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "pad": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "data": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "data": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "shares": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "object_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "guardian_id": {
+                                                                "type": "string"
+                                                            },
+                                                            "share": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "data": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "proof": {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "pad": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "data": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "challenge": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "response": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                            "data": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "usage": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "recovered_parts": {
+                                                                "type": "null"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+{
+    "name": "AzureSqlSmallSpoiled",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureSqlDatabase1",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "ballot_id",
+                "type": "nvarchar"
+            },
+            {
+                "name": "contest_id",
+                "type": "nvarchar"
+            },
+            {
+                "name": "selection_id",
+                "type": "nvarchar"
+            },
+            {
+                "name": "tally",
+                "type": "nchar"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "small_spoiled"
+        }
+    }
+}
+
+{
+    "name": "import_small_spoiled_json",
+    "properties": {
+        "activities": [
+            {
+                "name": "Import_small_spoiled",
+                "type": "Copy",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "JsonSource",
+                        "storeSettings": {
+                            "type": "AzureFileStorageReadSettings",
+                            "recursive": true,
+                            "wildcardFileName": "*.json",
+                            "enablePartitionDiscovery": false
+                        },
+                        "formatSettings": {
+                            "type": "JsonReadSettings"
+                        }
+                    },
+                    "sink": {
+                        "type": "AzureSqlSink",
+                        "writeBehavior": "insert",
+                        "sqlWriterUseTableLock": false
+                    },
+                    "enableStaging": false,
+                    "translator": {
+                        "type": "TabularTranslator",
+                        "mappings": [
+                            {
+                                "source": {
+                                    "path": "$['object_id']"
+                                },
+                                "sink": {
+                                    "name": "ballot_id",
+                                    "type": "String"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "path": "$['contests']"
+                                },
+                                "sink": {
+                                    "name": "contest_id",
+                                    "type": "String"
+                                }
+                            }
+                        ],
+                        "collectionReference": "",
+                        "mapComplexValuesToString": true
+                    }
+                },
+                "inputs": [
+                    {
+                        "referenceName": "small_spoiled_json",
+                        "type": "DatasetReference"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "referenceName": "AzureSqlSmallSpoiled",
+                        "type": "DatasetReference"
+                    }
+                ]
+            }
+        ],
+        "annotations": []
+    }
+}
